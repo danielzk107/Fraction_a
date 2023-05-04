@@ -19,5 +19,22 @@ TEST_CASE("Standard arithmetic functions"){
 }
 
 TEST_CASE("Equality functions"){
-    
+    Fraction a(4, 7), b(22, 15);
+    CHECK(a!=b);
+    CHECK(a==a);
+    CHECK(b==b);
+    CHECK_FALSE(a+b == b);
+    CHECK(a == float(4/7.0));
+    CHECK(a <= b);
+    CHECK_FALSE(b >= a);
+    CHECK(a < 1);
+    CHECK(b > 0.9);    
+}
+
+TEST_CASE("I/O functions"){
+    Fraction a(2, 10);
+    cout << "a+2.421" << a+2.421 << endl; 
+    cout << "First value: " << a << ", please insert new values" << endl;
+    cin >> a;
+    cout << "New value: " << a << endl;
 }
