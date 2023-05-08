@@ -19,100 +19,100 @@ Fraction &Fraction::operator++(int) {
 Fraction &operator+(Fraction &a, Fraction &b) {
     return a;
 };
-Fraction &operator+(Fraction &a, float &b) {
+Fraction& operator+(Fraction &a, float b) {
     return a;
 };
-Fraction &operator+(float &a, Fraction &b) {
+Fraction &operator+(float a, Fraction &b) {
     return b;
 }
 
 Fraction &operator-(Fraction &a, Fraction &b) {
     return a;
 };;
-Fraction &operator-(Fraction &a, float &b) {
+Fraction &operator-(Fraction &a, float b) {
     return a;
 };
-Fraction &operator-(float &a, Fraction &b) {
+Fraction &operator-(float a, Fraction &b) {
     return b;
 }
 
 Fraction &operator/(Fraction &a, Fraction &b) {
     return a;
 };
-Fraction &operator/(Fraction &a, float &b) {
+Fraction &operator/(Fraction &a, float b) {
     return a;
 };
-Fraction &operator/(float &a, Fraction &b) {
+Fraction &operator/(float a, Fraction &b) {
     return b;
 }
 
 Fraction &operator*(Fraction &a, Fraction &b) {
     return a;
 };
-Fraction &operator*(float &a, Fraction &b) {
+Fraction &operator*(float a, Fraction &b) {
     return b;
 };
-Fraction &operator*(Fraction &a, float &b) {
+Fraction &operator*(Fraction &a, float b) {
     return a;
 }
 
 bool operator==(Fraction &a, Fraction &b) {
     return false;
 };
-bool operator==(float &a, Fraction &b) {
+bool operator==(float a, Fraction &b) {
     return false;
 };
-bool operator==(Fraction &a, float &b) {
+bool operator==(Fraction &a, float b) {
     return false;
 };
 
 bool operator!=(Fraction &a, Fraction &b) {
     return false;
 };
-bool operator!=(float &a, Fraction &b) {
+bool operator!=(float a, Fraction &b) {
     return false;
 };
-bool operator!=(Fraction &a, float &b) {
+bool operator!=(Fraction &a, float b) {
     return false;
 };
 
 bool operator<(Fraction &a, Fraction &b) {
     return false;
 };
-bool operator<(float &a, Fraction &b) {
+bool operator<(float a, Fraction &b) {
     return false;
 };
-bool operator<(Fraction &a, float &b) {
+bool operator<(Fraction &a, float b) {
     return false;
 };
 
 bool operator>(Fraction &a, Fraction &b) {
     return false;
 };
-bool operator>(Fraction &a, float &b) {
+bool operator>(Fraction &a, float b) {
     return false;
 };
-bool operator>(float &a, Fraction &b) {
+bool operator>(float a, Fraction &b) {
     return false;
 };
 
 bool operator>=(Fraction &a, Fraction &b) {
     return false;
 }
-bool operator>=(float &a, Fraction &b) {
+bool operator>=(float a, Fraction &b) {
     return false;
 }
-bool operator>=(Fraction &a, float &b) {
+bool operator>=(Fraction &a, float b) {
     return false;
 }
 
 bool operator<=(Fraction &a, Fraction &b) {
     return false;
 }
-bool operator<=(float &a, Fraction &b) {
+bool operator<=(float a, Fraction &b) {
     return false;
 }
-bool operator<=(Fraction &a, float &b) {
+bool operator<=(Fraction &a, float b) {
     return false;
 }
 

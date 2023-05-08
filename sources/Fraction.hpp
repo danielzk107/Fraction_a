@@ -16,52 +16,51 @@ public:
 
     Fraction(int num, int denom);
 
-    Fraction &operator--();   // Prefix
-    Fraction& operator--(int); // Postfix
-    Fraction &operator++();   // Prefix
-    Fraction& operator++(int); // Postfix
-
-    friend Fraction& operator+(Fraction &a, Fraction &b);
-    friend Fraction& operator+(Fraction &a, float b);
-    friend Fraction& operator+(float a, Fraction &b);
-
-    friend Fraction& operator-(Fraction &a, Fraction &b);
-    friend Fraction& operator-(Fraction &a, float b);
-    friend Fraction& operator-(float a, Fraction &b);
-
-    friend Fraction& operator/(Fraction &a, Fraction &b);
-    friend Fraction& operator/(Fraction &a, float b);
-    friend Fraction& operator/(float a, Fraction &b);
-
-    friend Fraction& operator*(Fraction &a, Fraction &b);
-    friend Fraction& operator*(float a, Fraction &b);
-    friend Fraction& operator*(Fraction &a, float b);
-
-    friend bool operator==(Fraction &a, Fraction &b);
-    friend bool operator==(float a, Fraction &b);
-    friend bool operator==(Fraction &a, float b);
-    
-    friend bool operator!=(Fraction &a, Fraction &b);
-    friend bool operator!=(float a, Fraction &b);
-    friend bool operator!=(Fraction &a, float b);
-
-    friend bool operator<(Fraction &a, Fraction &b);
-    friend bool operator<(float a, Fraction &b);
-    friend bool operator<(Fraction &a, float b);
-
-    friend bool operator>(Fraction &a, Fraction &b);
-    friend bool operator>(Fraction &a, float b);
-    friend bool operator>(float a, Fraction &b);
-
-    friend bool operator>=(Fraction &a, Fraction &b);
-    friend bool operator>=(float a, Fraction &b);
-    friend bool operator>=(Fraction &a, float b);
-
-    friend bool operator<=(Fraction &a, Fraction &b);
-    friend bool operator<=(float a, Fraction &b);
-    friend bool operator<=(Fraction &a, float b);
+    Fraction &operator--();    // Prefix
+    Fraction &operator--(int); // Postfix
+    Fraction &operator++();    // Prefix
+    Fraction &operator++(int); // Postfix
 };
 
-ostream& operator<<(ostream &a, Fraction &b);
-Fraction& operator>>(istream &a, Fraction &b);
+Fraction &operator+(Fraction &a, Fraction &b);
+Fraction &operator+(Fraction &a, float b);
+Fraction &operator+(float a, Fraction &b);
 
+Fraction &operator-(Fraction &a, Fraction &b);
+Fraction &operator-(Fraction &a, float b);
+Fraction &operator-(float a, Fraction &b);
+
+Fraction &operator/(Fraction &a, Fraction &b);
+Fraction &operator/(Fraction &a, float b);
+Fraction &operator/(float a, Fraction &b);
+
+Fraction &operator*(Fraction &a, Fraction &b);
+Fraction &operator*(float a, Fraction &b);
+Fraction &operator*(Fraction &a, float b);
+
+bool operator==(Fraction &a, Fraction &b);
+bool operator==(float a, Fraction &b);
+bool operator==(Fraction &a, float b);
+
+bool operator!=(Fraction &a, Fraction &b);
+bool operator!=(float a, Fraction &b);
+bool operator!=(Fraction &a, float b);
+
+bool operator<(Fraction &a, Fraction &b);
+bool operator<(float a, Fraction &b);
+bool operator<(Fraction &a, float b);
+
+bool operator>(Fraction &a, Fraction &b);
+bool operator>(Fraction &a, float b);
+bool operator>(float a, Fraction &b);
+
+bool operator>=(Fraction &a, Fraction &b);
+bool operator>=(float a, Fraction &b);
+bool operator>=(Fraction &a, float b);
+
+bool operator<=(Fraction &a, Fraction &b);
+bool operator<=(float a, Fraction &b);
+bool operator<=(Fraction &a, float b);
+
+ostream &operator<<(ostream &a, Fraction &b);
+Fraction &operator>>(istream &a, Fraction &b);

@@ -5,17 +5,17 @@ using namespace ariel;
 
 TEST_CASE("Standard arithmetic functions"){
     Fraction a(2, 5), b(4, 9);
-    CHECK_EQ(a+b, Fraction(38 ,45));
-    CHECK_EQ(b-a, Fraction(2, 45));
-    CHECK_EQ(a-b, Fraction(-2, 45));
-    CHECK_EQ(a+2, Fraction(12, 5));
-    CHECK_EQ(b-1, Fraction(-5, 9));
+    CHECK(a+b == 38/45.0);
+    CHECK(b-a == 2.0/45);
+    CHECK(a-b == -2.0/45);
+    CHECK(a+2 == 12/5.0);
+    CHECK(b-1 == -5/9.0);
 
-    CHECK_EQ(a*b, Fraction(8, 45));
-    CHECK_EQ(a/b, Fraction(9, 10));
-    CHECK_EQ(b/a, Fraction(10,9));
-    CHECK_EQ(a/5, Fraction(2, 25));
-    CHECK_EQ(9*b, Fraction(4, 1));
+    CHECK(a*b == 8/45.0);
+    CHECK(a/b == 9/10.0);
+    CHECK(b/a == 10/9.0);
+    CHECK(a/5 == 2/25.0);
+    CHECK(9*b == 4);
 }
 
 TEST_CASE("Equality functions"){
@@ -34,7 +34,8 @@ TEST_CASE("Equality functions"){
 TEST_CASE("I/O functions"){
     Fraction a(2, 10);
     cout << "a+2.421" << a+2.421 << endl; 
-    cout << "First value: " << a << ", please insert new values" << endl;
+    cout << "First value: " << a << ", please type 4 , 6" << endl;
     cin >> a;
+    CHECK(a == 4/6.0);
     cout << "New value: " << a << endl;
 }
